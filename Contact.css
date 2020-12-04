@@ -3,7 +3,7 @@
    display: grid;
    row-gap: 60px;
    color: #fff;
-   padding: 20px;
+   padding: 10px;
 }
 .contact .titles{
    font-size: 23px;
@@ -105,5 +105,8 @@ article h4{
    }
    .btndiv{
    place-items: start;
+}
+.contact{
+   padding: 20px;
 }
 }
