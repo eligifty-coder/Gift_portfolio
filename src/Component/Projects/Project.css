@@ -1,0 +1,98 @@
+.btn{
+   display: inline-block;
+   position: relative;
+   z-index: 11;
+   letter-spacing: 2px;
+   font-weight: 500;
+   text-transform: uppercase;
+   padding: 10px 10px !important;
+   color: rgb(0, 83, 165);
+   font-size: 16px;
+   text-decoration: none;
+   transition: all .5s ease;
+   text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:hover{
+   opacity: .7;
+}
+.btnRed{
+   color: rgb(49, 206, 113);
+}
+/* .project{
+   
+   background: red;
+   width: 100%;
+} */
+.projectContainer{
+   position: relative;
+   z-index: 11;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    place-items: center;
+   column-gap: 90px;
+   padding: 0 20px;
+   padding: 50px 10px;
+   row-gap: 50px;
+}
+.singleProject {
+   padding: 50px;
+    background-color:rgb(0, 128, 129, .9);
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    row-gap: 12px;
+    position: relative;
+    z-index: -111;
+    outline: none;
+    border: none;
+}
+.singleProject::after{
+   content: "";
+   position: absolute;
+   background-color:rgb(0, 128, 129);
+   border-bottom: 20px solid rgb(0, 128, 129);
+    border-left: 20px solid rgb(0, 128, 129);
+    border-right: 20px solid#ffff;
+    border-top: 20px solid #fff;
+    top: 0;
+    right: 0;
+     filter: drop-shadow(-5px 5px 3px rgba(0,0,0,0.5));
+     outline: none;
+}
+.singleProject::before{
+   content: "";
+   position: absolute;
+   background-color:rgb(0, 128, 129);
+    border-top: 40px solid rgb(0, 128, 129);
+    border-right: 40px solid rgb(0, 128, 129);
+    border-left: 40px solid #fff;
+    border-bottom: 40px solid #fff;
+    bottom: 0;
+    left: 0;
+    box-shadow:inset 5px 5px 3px rgba(0,0,0,0.5) ;
+    z-index: -1;
+    outline: none;
+}
+.singleProject img{
+   width: 100%;
+}
+.singleProject img:hover{
+   opacity: .8;
+}
+.singleProject h3{
+   font-size: 16px;
+   color: #fff;
+}
+   .btnContainer{
+   display: grid;
+   grid-template-columns: repeat(2, 100px);
+   place-items: center;
+}
+@media screen and (min-width:500px){
+   .projectContainer{
+      padding: 50px;
+   }
+}

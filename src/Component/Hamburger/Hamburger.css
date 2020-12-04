@@ -1,0 +1,19 @@
+.Hamburger{
+   display: grid;
+   row-gap: 4px;
+}
+.div{
+   width: 25px;
+   height: 2px;
+   background: #111;
+   transition: all .3s  ease;
+}
+.applyClass .div1{
+   transform: rotate(45deg) translateX(4px);
+}
+.applyClass .div3{
+   background: transparent;
+}
+.applyClass .div2{
+   transform: rotate(-30deg) translateX(3px);
+}

@@ -1,0 +1,23 @@
+.social a{
+   color:  #2196f3;
+   font-size: 30px;
+   display: grid;
+   place-items: center;
+   row-gap: 30px;
+}
+.social a:hover{
+   opacity: .7;
+}
+.social {
+   display: grid;
+   place-items: center;
+   row-gap: 50px;
+   padding: 10px;
+   background: #fff;
+   width: 40px;
+   position: fixed;
+   filter: drop-shadow(-5px 5px 3px rgba(0,0,0,0.5));
+   z-index: 11111;
+   right: 0;
+   top: 20%;
+}

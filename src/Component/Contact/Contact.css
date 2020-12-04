@@ -1,0 +1,109 @@
+.contact{
+   background: #111;
+   display: grid;
+   row-gap: 60px;
+   color: #fff;
+   padding: 20px;
+}
+.contact .titles{
+   font-size: 23px;
+   font-weight: 600;
+   text-align: center;
+}
+.firstContent{
+   display: grid;
+   row-gap: 60px;
+}
+.firstContent a{
+   text-decoration: none;
+   color: #fff;
+   font-weight: 300;
+}
+.firstContent p{
+   font-weight: 300;
+   font-size: 16px;
+}
+article h4{
+   font-weight: 400;
+   color: #2196f3;
+}
+.firstContent article{
+   display: grid;
+   grid-template-columns: 30px 40%;
+   place-items: center;
+   column-gap: 20px;
+}
+.firstContent span{
+    color: #2196f3;
+    padding-right: 5px;
+}
+.contact .titles p{
+   font-size: 14px;
+}
+.contact .titles h2{
+    color: #2196f3;
+}
+.formSec h3, .firstContent h3{
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+}
+.formSec form input, .formSec form textarea{
+   padding: 15px;
+   font-size: 16px;
+   color:#fff;
+   background: transparent;
+   border: none;
+   outline: none;
+   background: #222;
+}
+.formSec form input::placeholder, .formSec form textarea::placeholder{
+   color: #999;
+}
+.formSec form textarea{
+   min-height: 200px;
+}
+.formSec form{
+   display: grid;
+   row-gap: 20px;
+}
+.contactcontent{
+   display: grid;
+   grid-template-columns: 1fr;
+   align-items: start;
+   row-gap: 30px;
+}
+.btnColor{
+   background: #2196f3;
+   display: inline-block;
+   letter-spacing: 2px;
+   font-weight: 500;
+   text-transform: uppercase;
+   width: 170px;
+   padding: 10px 30px;
+   color: #fff;
+   font-size: 18px;
+   text-decoration: none;
+   transition: all .5s ease;
+   text-align: center;
+}
+.btnColor:hover{
+   opacity: .7;
+}
+.btndiv{
+   display: grid;
+   place-items: center;
+}
+.paraInfo{
+   width: 93%;
+   display: grid;
+   place-items: start;
+}
+@media screen and (min-width:1000px){
+   .contactcontent{
+      grid-template-columns: repeat(2,1fr);
+   }
+   .btndiv{
+   place-items: start;
+}
+}
