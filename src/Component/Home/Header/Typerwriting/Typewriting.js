@@ -11,19 +11,19 @@ class Typwriting extends Component{
    count=0
    type=()=>{
       let typeSpeed = 500
-      this.state.current = this.state.wordIndex% this.props.children.length
-      this.state.fullTxt= this.props.children[this.state.current]
+      this.setState({ current: this.state.wordIndex % this.props.children.length})
+      this.setState({ fullTxt: this.props.children[this.state.current]})
       if(!this.state.isDeleting){
          this.setState({txt: this.state.fullTxt.substr(0,this.state.txt.length+1)})
       }else{
          this.setState({txt: this.state.fullTxt.substr(0,this.state.txt.length-1)})
          typeSpeed/=2
       }
-      if(!this.state.isDeleting && this.state.fullTxt==this.state.txt){
+      if(!this.state.isDeleting && this.state.fullTxt===this.state.txt){
          this.setState({isDeleting:true})
          typeSpeed=1000
       }
-      if(this.state.isDeleting && this.state.txt==""){
+      if(this.state.isDeleting && this.state.txt===""){
          this.setState({isDeleting:false, wordIndex:this.count++})
          typeSpeed=1000
       }

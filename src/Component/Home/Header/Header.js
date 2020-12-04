@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import './Header.css'
 import Typwriting from './Typerwriting/Typewriting'
 import Btn from '../../Buttons/Btn'
