@@ -32,7 +32,6 @@ function Navigation() {
       navbarClass.push('scrollBg')
       Linked.push("scrollLink")
       Logo.push("scrollLogo")
-  
    }
    
    useEffect(()=>{
